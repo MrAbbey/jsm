@@ -1,0 +1,114 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.jsm</groupId>
+  <artifactId>jsm</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>jsm</name>
+  <description>Jersey+Jersey+Spring3.2.14+MyBatis3.3.0</description>
+
+  <dependencies>
+      <!-- MyBatis -->
+	  <dependency>
+	      <groupId>org.mybatis</groupId>
+	      <artifactId>mybatis</artifactId>
+	      <version> 3.3.0</version>
+	  </dependency>
+	  
+	  <!-- Mysql -->
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>5.1.34</version>
+      </dependency>
+	 
+	  <!-- c3p0 -->
+      <dependency>
+		  <groupId>com.mchange</groupId>
+		  <artifactId>c3p0</artifactId>
+		  <version>0.9.2</version>
+      </dependency>
+      
+      <!-- Spring Framwork -->
+      <dependency>
+         <groupId>org.springframework</groupId>
+         <artifactId>spring-context</artifactId>
+         <version>3.2.14.RELEASE</version>
+      </dependency>
+      
+      <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>3.2.14.RELEASE</version>
+        </dependency>
+ 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>3.2.14.RELEASE</version>
+        </dependency>
+      
+      <!-- Log4j -->
+      <dependency>
+	      <groupId>log4j</groupId>
+	      <artifactId>log4j</artifactId>
+	      <version>1.2.14</version>
+	      <scope>runtime</scope>
+      </dependency>
+      
+      <!-- mybatis-spring -->
+      <dependency>
+		  <groupId>org.mybatis</groupId>
+		  <artifactId>mybatis-spring</artifactId>
+		  <version>1.2.3</version>
+      </dependency>
+      
+      <!-- spring-tx -->
+      <dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-tx</artifactId>
+	    <version>3.2.14.RELEASE</version>
+      </dependency>
+      
+      <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>3.2.14.RELEASE</version>
+      </dependency>
+      
+      <!-- Jersey -->
+      <dependency>
+          <groupId>com.sun.jersey</groupId>
+          <artifactId>jersey-server</artifactId>
+          <version>1.8</version>
+      </dependency>
+ 
+        <!-- Jersey + Spring -->
+        <dependency>
+            <groupId>com.sun.jersey.contribs</groupId>
+            <artifactId>jersey-spring</artifactId>
+            <version>1.8</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-web</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-beans</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-context</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+  </dependencies>
+</project>
